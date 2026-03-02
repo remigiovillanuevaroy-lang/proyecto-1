@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Document</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+
+</head>
+
+<style>
+     body {
+            background: #16754e;
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background: #c5a46d;
+            padding: 15px;
+            text-align: center;
+            font-size: 22px;
+            font-weight: bold;
+            color: #332100;
+        }
+
+        .contenedor {
+            width: 80%;
+            background: #fff8e6;
+            margin: 25px auto;
+            padding: 20px;
+            border-radius: 8px;
+            border: 2px solid #c2a471;
+        }
+
+        .btn-agregar {
+            display: inline-block;
+            padding: 8px 15px;
+            background: #4CAF50;
+            color: white;
+            font-weight: bold;
+            border-radius: 5px;
+            text-decoration: none;
+            margin-bottom: 15px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background: white;
+        }
+
+        th {
+            background: #8cc4a1;
+            padding: 10px;
+            border: 1px solid #888;
+        }
+
+        td {
+            padding: 8px;
+            border: 1px solid #666;
+        }
+
+        tr:nth-child(even) {
+            background: #f2f2f2;
+        }
+    
+    input {
+
+        padding: 4px 90px;
+
+    }
+
+
+    select {
+
+        padding: 4px 100px;
+    }
+</style>
+
+<body>
+    <nav>
+        <a href="index.html" style="text-decoration: none;
+color: blue;
+padding: 8px 5px;"><i class="bi bi-arrow-left"></i> Volver al Listado </a>
+    </nav>
+    <main>
+        <h1><i class="bi bi-person-vcard"></i>NOMBRES COMPLETOS</h1>
+        <p>Complete los datos del nuevo estudiante.</p>
+        <hr>
+        <form action="">
+
+            <label for=""><i class="bi bi-person"></i> Nombres Completos:</label><br>
+
+            <input type="text" placeholder="Ej. REMIGIO.V" required
+                oninvalid="this.setCustomValidity('!Oye No olvides poner tu nombre')"
+                oninput="this.setCustomValidity('')"><br><br>
+
+            <label for=""><i class="bi bi-person-fill"></i> Apellidos: </label><br>
+
+            <input type="text" placeholder="Ej. REMIGIO.V" required
+                oninvalid="this.setCustomValidity('Ingresa tus Apellidos!')"
+                oninput="this.setCustomValidity('')"><br><br>
+
+            <label for=""><i class="bi bi-person-fill"></i> Correo Electronico:</label><br>
+
+            <input type="gmail" placeholder="Ej. Alumno@instituto.edu.pe" required
+                oninvalid="this.setCustomValidity('Ingrese un Email válido ',)"
+                oninput="this.setCustomValidity('')"><br><br>
+
+            <label for=""><i class="bi bi-backpack"></>clik:</label><br>
+
+        
+
+            <button type="submit" style="background-color: #121b50;
+
+color: rgb(248, 248, 248);
+
+padding: 10px 100px;
+
+text-align:center;
+
+display: inline-block;
+
+font-size: 14px;
+
+cursor: pointer;">
+
+                <i class="bi bi-rocket-takeoff"></i> Guardar Datos </button>
+
+        </form>
+
+
+    </main>
+
+</body>
